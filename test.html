@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one" placeholder="숫자입력">
+    <input type="text" id="two" placeholder="숫자입력">
+    <button id="addBtn">계산</button>
+    <p id="console"></p>
+    <script>
+        document.querySelector("#addBtn").addEventListener("click",function(){
+            var a = document.querySelector("#one").value;
+            var b = document.querySelector("#two").value;
+            document.querySelector("#console").innerText=parseFloat(a)+parseFloat(b);
+        })
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap03_grid.html</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    
     <style>
         .row > div{
             border: 1px dotted green;
@@ -20,6 +20,11 @@
             <div class="col">2번</div>
             <div class="col">3번</div>
         </div>
+        <div class="row">
+            <div class="col-3">1번</div>
+            <div class="col-6">2번</div>
+            <div class="col-3">3번</div>
+        </div>
         <h2>sm 영역 이상에 대해서 1:1:1의 폭을 가진다.</h2>
         <div class="row">
             <div class="col-sm">1번</div>
@@ -27,5 +32,37 @@
             <div class="col-sm">3번</div>
         </div>
     </div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
 </body>
 </html>
